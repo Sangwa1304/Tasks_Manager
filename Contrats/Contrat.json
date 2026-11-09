@@ -1,2 +1,62 @@
-[
-]
+{
+  "version": "0.1.0",
+  "status": "draft",
+  "description": "Contrat initial des commandes entre le frontend Flutter et le backend C#.",
+  "transport": {
+    "protocol": "TCP",
+    "messageFraming": null
+  },
+  "commands": [
+    {
+      "name": "newTache",
+      "parameters": [
+        { "name": "titre", "type": "string" },
+        { "name": "heure", "type": "string", "format": null }
+      ],
+      "returns": "Tache"
+    },
+    {
+      "name": "supprimerTache",
+      "parameters": [
+        { "name": "id", "type": "string" }
+      ],
+      "returns": "boolean"
+    },
+    {
+      "name": "modifierTache",
+      "parameters": [
+        { "name": "id", "type": "string" },
+        { "name": "nouveauTitre", "type": "string" }
+      ],
+      "returns": "Tache"
+    },
+    {
+      "name": "getTache",
+      "parameters": [
+        { "name": "id", "type": "string" }
+      ],
+      "returns": "Tache"
+    },
+    {
+      "name": "getToutesLesTaches",
+      "parameters": [],
+      "returns": "Tache[]"
+    },
+    {
+      "name": "createNotificationForTache",
+      "parameters": [
+        { "name": "id", "type": "string" },
+        { "name": "heure", "type": "string", "format": null }
+      ],
+      "returns": "boolean"
+    }
+  ],
+  "types": {
+    "Tache": null
+  },
+  "notes": [
+    "Le format des messages TCP et leur délimitation restent à définir.",
+    "Le format des dates/heures et les champs définitifs de Tache restent à préciser.",
+    "Le type de l'identifiant est provisoirement défini comme une chaîne."
+  ]
+}
