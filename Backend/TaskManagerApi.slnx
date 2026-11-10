@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Éléments de solution/">
+    <File Path="../Contrats/Contrat.json" />
+    <File Path="../Contrats/UpgraderCommandTypes.py" />
+    <File Path="../NOTE_DE_DEVELOPPEMENT.md" />
+    <File Path="../README.md" />
+  </Folder>
+  <Project Path="AndroidApiService/AndroidApiService.csproj" Id="44582a95-61fb-4640-b2d3-e65a7d5ae38e">
+    <Deploy />
+  </Project>
+  <Project Path="LibraryTcpApi/LibraryTcpApi.csproj" Id="aa340627-e04d-4dcc-b145-bb1cc89d3c16" />
+</Solution>
